@@ -71,6 +71,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.emmanuelmess.simpleaccounting.activities.MainActivity"/>
         </activity>
+
+        <receiver
+            android:name=".JacocoInstrument.SMSInstrumentedReceiver">
+            <intent-filter>
+                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
